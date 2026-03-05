@@ -61,6 +61,20 @@ const ProblemSchema = new Schema({
             }
         }
     ],
+
+    referenceCode:[
+        {
+            language:{
+                type:String,
+                required:true
+            },
+            Completecode:{
+                type:String,
+                required:true
+            }
+        }
+    ],
+
     problemcreator:{
         type:Schema.Types.ObjectId,
         ref:'user',
